@@ -1,0 +1,300 @@
+
+.container{
+      font-family: "Winky Rough";
+      font-optical-sizing: auto;
+      margin: 0 auto;
+      width: 950px;
+      text-align: center;
+      /*background-color: #96ffff;/*kesuyo*/
+}
+
+
+h1 {
+      font-family: "Winky Rough";
+      font-optical-sizing: auto;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 60px;
+      margin: 20px;
+    }
+
+ul.menus{
+      font-family: "Winky Rough";
+      font-optical-sizing: auto;
+      list-style: none;/*中黒消える*/
+      display: flex;/*横並びなる*/
+      padding: 65px 0;/*上下に開けようってやつ*/
+      font-weight: weight;
+      font-size: 20px;
+}
+
+.menus li{
+      margin-right: 100px;/*右側のマージンの幅*/
+      margin-left: 80px;/*左側のマージンの幅*/
+}
+
+.menus a {/*リンクタグの設定*/
+      position: relative;
+      text-decoration: none;/*アンダーライン消す*/
+      color: #000000;
+}
+
+.menus a::before{/*beforeがあたかもあるように使えるやつ*/
+      content: '';
+      position: absolute;/*絶対的位置、下に場所を書く*/
+      text-align: center;
+      display: brock;
+      top: 25px;
+      width: 30px;
+      height: 2px;
+      background-color: #d4d5d6;/*線の色*/
+}
+
+/*プラスアルファアニメーション*/
+.menus a {
+      transition: 0.2s ease-in-out;
+}
+
+.menus a::before{
+      transition: 0.2s ease-in-out;
+}
+
+.menus a:hover{
+      color: #0099cc;
+}
+
+.menus a:hover::before{
+      width: 60px;
+}
+
+h2{
+      font-family: "Winky Rough";
+      font-optical-sizing: auto;
+      padding: 75px 10px 7px;/*上下に開けようってやつ*/
+      margin: 5px;
+      font-size: 25px;
+      font-weight: 30px;
+}
+
+
+
+
+
+
+
+.news{
+      list-style: none;/*中黒消える.ulでやるなら必須級*/
+      width: 650px;/*幅決める*/
+      text-decoration:underline;
+      margin-left: 140px;
+      text-align: left;
+      color: #3d93df;
+      font-size: 14px;
+}
+
+.news li:not(:last-child){/*li:not(:last-child)入れないと全部にボーダー入れるってやつ、でも入れると最後のところにボーダーには適用しないっていうやつ*/
+      border-bottom: 1px solid #c1c1c1;/*下線設定*/
+}
+
+.news span{
+
+      display: inline-block;/*日付全体設定*/
+      width: 100px;
+      font-size: 15px;
+      list-style: none;
+      color: #000;
+}
+
+.news a{
+      display: inline-block;
+      padding: 20px 15px;/*余白設定*/
+      color: #3d93df;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.concept_wrapper{
+      
+      display: flex;/*フレックスボックス使うよ宣言。これで横並びにしてくれる*/
+      margin: left;
+      width: 950px;
+      margin-top: 50px;
+      margin-left:40px;
+      
+}
+
+.concept_wrapper img {
+      width: 300px;
+      margin: left auto;/*大きいほど文字が左の方に詰めてく感じ*/
+      height: auto;
+}
+
+.text_wrapper {
+      margin-left: 30px;/*画像横に空間*/
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;/*太字*/
+      margin-right: 30px;/*右側のマージンの幅*/
+}
+
+
+
+
+.consept_wrapper small {
+      color: #666;
+}
+
+.concept_wrapper p {
+      margin-top: 50px;/*箱の中での位置　大きいとしたいく*/
+      line-height: 30px;/*行間の幅*/
+      font-weight: 10;
+      font-size:15px;
+}
+
+.text_wrapper small{/*なってくれない*/
+      display: inline-block;
+      font-family: "Winky Rough";
+      font-optical-sizing: auto;
+}
+
+
+
+
+.concept_wrapper2{
+      display: flex;/*フレックスボックス使うよ宣言。これで横並びにしてくれる*/
+      margin: left;
+      width: 950px;
+      margin-top: 70px;
+}
+
+.concept_wrapper2 img {
+      width: 300px;
+      margin-left: 40px;
+      height: auto;
+}
+
+.text_wrapper2 {
+      margin-left: 30px;/*画像横に空間*/
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;/*太字*/
+      margin-right: 30px;/*右側のマージンの幅*/
+}
+
+
+
+.consept_wrapper2 span {
+      color: #666;
+}
+
+.concept_wrapper2 p {
+      margin-top: 50px;/*箱の中での位置　大きいとしたいく*/
+      line-height: 30px;/*行間の幅*/
+      font-weight: 10;
+      font-size:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photo_group{
+      list-style: none;/*中黒消*/
+      display: flex;
+      flex-wrap: wrap;/*下表示　横長無*/
+      justify-content: space-around;/*マージンいい感じ調整*/
+      margin-top: 30px;
+}
+
+.photo_group li{
+      width: 33%;/*3列だから100/3で33*/
+      text-align: center;
+}
+
+.photo_group img{
+      width: 270px;
+      height: 270px;
+      object-fit: cover;/*画像の比率を保ったまま、指定したサイズに収める*/
+      margin-bottom: 20px;/*画像と文字の距離*/
+
+}
+
+.photo_group strong,.photo_group span{/**/
+      display: inline-block;
+      width:260px;
+      margin-bottom: 40px;
+      
+      font-size: 17px;
+      font-weight: bold;
+      
+}
+
+.photo_group span{
+      
+      font-size: 17px;
+      font-weight: normal;
+      margin-bottom: 50px;
+      line-height: 1.8;
+}
+
+.photo_group a{
+      display: inline-block;
+      width:260px;
+      margin-bottom: 40px;
+      font-size: 17px;
+      font-weight: bold;
+      color:#3d93df;
+      text-decoration: none;
+}
+
+
+
+
+.search {
+      width: 150px;
+      margin: 16px auto;
+      display: flex;
+      margin-bottom: 100px;
+
+}
+
+.search__query {
+      width: 204px;
+      height: 32px;
+      padding: 0 8px;
+      border: 1px solid #cccccc;
+      font-size: 1rem;
+}
+
+.search__button {
+      width: 80px;
+      height: 32px;
+      font-size: 1rem;
+      margin-left: 18px;
+}

@@ -1,0 +1,69 @@
+h2{
+      font-family: "Winky Rough";
+      font-optical-sizing: auto;
+      padding: 75px 10px 7px;/*上下に開けようってやつ*/
+      margin: 5px;
+      font-size: 20px;
+      font-weight: 30px;
+      text-align: center;
+}
+
+
+
+.photo_group{
+      list-style: none;/*中黒消*/
+      display: flex;
+      flex-wrap: wrap;/*下表示　横長無*/
+      justify-content: space-around;/*マージンいい感じ調整*/
+      margin-top: 30px;
+}
+
+.photo_group li{
+      width: 33%;/*3列だから100/3で33*/
+      text-align: center;
+}
+
+.photo_group img{
+      width: 270px;
+      height: 270px;
+      object-fit: cover;/*画像の比率を保ったまま、指定したサイズに収める*/
+      margin-bottom: 20px;/*画像と文字の距離*/
+
+}
+
+.photo_group strong,.photo_group span{/**/
+      display: inline-block;
+      width:260px;
+      margin-bottom: 40px;
+      font-size: 17px;
+      font-weight: bold;
+      
+}
+
+.photo_group span{
+      font-size: 17px;
+      font-weight: normal;
+      margin-bottom: 50px;
+      line-height: 1.8;
+}
+
+.photo_group a{
+      display: inline-block;
+      margin-bottom: 40px;
+      font-size: 17px;
+      font-weight: bold;
+}
+
+.news-group{
+      list-style: none;/*中黒消*/
+      text-align:center;
+}
+.news-group li{
+      display: inline-block;
+      margin-top: 100px;
+}
+
+.news-group span{
+      display: inline-block;
+      padding: 20px;;
+}
